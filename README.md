@@ -40,6 +40,12 @@ This repository is **not**:
 
 No code, examples, diagrams, or implementation guidance are included by design.
 
+
+## Supplementary Material (Non-Normative)
+
+- Appendix A — Architectural Placement (Non-Normative)
+
+
 ### Normative Status
 
 The architectural specification in this repository is **normative**.
@@ -66,4 +72,5 @@ Future revisions may occur to clarify or extend the specification.
 All architectural invariants are explicitly defined within the current version.
 
 ---
+
 
