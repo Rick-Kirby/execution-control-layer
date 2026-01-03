@@ -1,0 +1,80 @@
+# Reference Architecture
+
+## Status and Authority
+
+This Reference Architecture is **non-normative**. It does not define requirements, constraints, or behaviour.
+
+The authoritative sources, in descending order of precedence, are:
+
+1. *Execution Control Layer (ECL) Architectural Specification v1.0*
+2. *Appendix A — Architectural Placement*
+3. Normative ECL Supplements
+4. This Reference Architecture
+
+Any conflict is resolved in favour of the canonical specification, then Appendix A, then the supplements. This document is subordinate to all three.
+
+## Purpose
+
+This Reference Architecture exists to:
+
+* Demonstrate realizability of the ECL specification within concrete system architectures
+* Clarify placement and boundaries of the Execution Control Layer relative to other architectural components
+* Explain control flow at a conceptual level
+* Support architectural review, audit, and understanding
+
+It does not prescribe implementation approaches, operational procedures, or deployment patterns.
+
+## Audience
+
+This material is intended for:
+
+* System architects
+* Reviewers
+* Auditors
+* Senior engineers
+
+## Relationship to the Canonical Specification
+
+The canonical specification states:
+
+> "This specification is intended as a canonical reference for system architects, reviewers, and implementers. It functions as prior art and as a normative definition of architectural invariants. It does not provide implementation guidance, operational procedures, or policy content."
+
+This Reference Architecture clarifies that intent by providing illustrative context. It restates and clarifies architectural placement without introducing new normative constraints.
+
+The specification also states:
+
+> "The Execution Control Layer governs how decisions are executed, not which decisions are made."
+
+This distinction between governance of execution and determination of decisions is foundational to the entire architecture and is reflected throughout this reference material.
+
+## Key Architectural Principles
+
+The following principles, drawn from the canonical specification, govern this Reference Architecture:
+
+* "Contracts define constraints, not implementation techniques."
+* "Partial conformance is non-conformance."
+* "The Execution Control Layer (ECL) is not a component, service, agent, or tool."
+
+These principles are binding in the canonical specification and are reflected throughout this Reference Architecture.
+
+## Contents of This Directory
+
+This directory contains the following files:
+
+**`01_Placement_in_Stack.md`**  
+Clarifies where the Execution Control Layer resides within a layered system architecture. Derived from Appendix A of the canonical specification.
+
+**`02_Control_Boundary_and_Flow.md`**  
+Describes the conceptual flow of control through the Execution Control Layer and its interaction with adjacent architectural elements.
+
+**`03_Invariants_to_Interfaces_Mapping.md`**  
+Explains how canonical invariants are reflected at architectural boundaries without prescribing implementation.
+
+**`04_Auditability_and_Provenance.md`**  
+Describes provenance, traceability, and audit surfaces aligned with the normative supplements.
+
+**`05_Failure_Modes_and_Fail_Closed.md`**  
+Explains deterministic failure handling and fail-closed behaviour at the execution boundary.
+
+
+Readers should consult the canonical specification and normative supplements before engaging with this material. This Reference Architecture clarifies but does not replace authoritative sources.
