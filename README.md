@@ -6,6 +6,18 @@ The Execution Control Layer (ECL) is a deterministic, governance-bound control l
 
 This repository exists to publish a **single, citation-grade definition** of ECL as a normative architectural primitive.
 
+## Executive Summary
+
+The **Execution Control Layer (ECL)** defines **where execution authority resides** in AI-driven systems at the moment an internal decision transitions into a real-world action.
+
+ECL specifies a **non-bypassable, execution-time control boundary** between **intent formation** (reasoning, planning, policy selection) and **action execution** (external side effects). All execution requests must pass through this boundary, where they are deterministically evaluated and either permitted or denied at runtime.
+
+In deployed agentic systems today, this execution boundary typically exists implicitly—distributed across tool adapters, middleware, or operational controls. ECL makes this boundary **explicit, owned, and formally specified**, ensuring execution responsibility is not diffused across models, tools, or policy text.
+
+ECL is **not a protocol, framework, SDK, or policy engine**.  
+It is a **normative execution-time architectural primitive** that defines *how execution authority is exercised*, independent of how reasoning is performed or policies are authored.
+
+
 ### What This Repository Contains
 
 * A formal, versioned architectural specification defining the Execution Control Layer (ECL)
@@ -72,5 +84,6 @@ Future revisions may occur to clarify or extend the specification.
 All architectural invariants are explicitly defined within the current version.
 
 ---
+
 
 
