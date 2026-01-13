@@ -1,0 +1,21 @@
+{
+  "profile_id": "example",
+  "profile_version": "1.0.0",
+  "allowed_tools": [
+    {
+      "name": "email.send",
+      "required_controls": { "approval_token": false },
+      "constraints": {
+        "arg_rules": [
+          { "path": "$.to", "type": "string", "pattern": "^[^@]+@example\\.com$" },
+          { "path": "$.subject", "type": "string", "max_len": 120 }
+        ]
+      }
+    },
+    {
+      "name": "storage.put",
+      "required_controls": { "approval_token": true }
+    }
+  ],
+  "default": "DENY"
+}
