@@ -53,6 +53,28 @@ This repository is **not**:
 No code, examples, diagrams, or implementation guidance are included by design.
 
 
+## Reference Runtime (Non-Normative)
+
+This repository includes a minimal, non-normative reference runtime
+demonstrating the Execution Control Layer (ECL) invariants in executable form.
+
+The reference runtime is:
+- deterministic
+- fail-closed
+- test-driven
+- audit-preserving
+
+It exists solely to illustrate execution-time behavior and invariant enforcement.
+It does not prescribe system design, deployment topology, scaling strategy, or
+operational architecture.
+
+At enterprise scale, execution and audit streams are expected to be sharded and
+reconciled out-of-band. Such aggregation is intentionally out of scope for this
+repository and the ECL architectural specification.
+
+Location: `reference-runtime/`
+
+
 ## Supplementary Material (Non-Normative)
 
 - Appendix A — Architectural Placement (Non-Normative)
@@ -84,6 +106,7 @@ Future revisions may occur to clarify or extend the specification.
 All architectural invariants are explicitly defined within the current version.
 
 ---
+
 
 
 
